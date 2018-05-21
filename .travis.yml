@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: 4809c7a2-9074-4b5a-9e01-0e15f0d7525c
+  app: cryptic-coast-16216
+  on:
+    repo: rrogerthat/blog-app-mongoose-challenge-solution
